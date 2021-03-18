@@ -48,9 +48,9 @@ Checklist
 
 ## Auth
 
-| Función                         | Descripción                                             |
-| ------------------------------- | ------------------------------------------------------- |
-| Auth::check()                   | Regresa true si el usuario esta validado                |
-| Auth::logout()                  | Cierra sesión                                           |
-| Auth::attempt($usrArreglo,true) | Valida un usuario, en caso correo crea una sesión nueva |
-| Auth::user()                    | Obtiene los datos del usuario actual                    |
+| Función                                                      | Descripción                                             |
+| ------------------------------------------------------------ | ------------------------------------------------------- |
+| Auth::check()                                                | Regresa true si el usuario esta validado                |
+| Auth::logout()                                               | Cierra sesión                                           |
+| $usrArreglo=[<br />          'name'=>$req->post('username')<br />          ,'password'=>$req->post('password')<br />];<br />Auth::attempt($usrArreglo,true) | Valida un usuario, en caso correo crea una sesión nueva |
+| Auth::user()                                                 | Obtiene los datos del usuario actual                    |
